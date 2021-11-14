@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework_1</title>
+</head>
+<body>
+
+<script>
+    // <!--Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.-->
+    //     <!--Вивести кожну змінну за допомогою: console.log , alert, document.write-->
+
+    let a = 'hello'
+    let b = 'owu'
+    let c = 'com'
+    let d = 'ua'
+    let e= 1;
+    let f = 10;
+    let g = -999;
+    let h = 123;
+    let i= 3.14;
+    let j = 2.7;
+    let k = 16;
+    let n = 'true';
+    let m = 'false';
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+    console.log(h);
+    console.log(i);
+    console.log(j);
+    console.log(k);
+    console.log(n);
+    console.log(m);
+    // alert(a);
+    // alert(b);
+    // alert(c);
+    // alert(d);
+    // alert(e);
+    // alert(f);
+    // alert(j);
+    // alert(h);
+    // alert(i);
+    // alert(j);
+    // alert(k);
+    // alert(n);
+    // alert(m);
+    document.write(a);
+    document.write(b);
+    document.write(c);
+    document.write(d);
+    document.write(e);
+    document.write(f);
+    document.write(j);
+    document.write(h);
+    document.write(i);
+    document.write(j);
+    document.write(k);
+    document.write(n);
+    document.write(m);
+
+    // Переприсвоїти кожній змінній з завдання значення на довільне.
+    // Вивести кожну змінну за допомогою: console.log , alert, document.write
+    a = 'привет';
+    b = 'мир';
+    c = 'hi';
+    d = 'world';
+    e = 100;
+    f = 1000;
+    g = -150;
+    h = 22;
+    i= 1.55;
+    j = 6.8;
+    k = 44;
+    n = 'false';
+    m = 'true';
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+    console.log(h);
+    console.log(i);
+    console.log(j);
+    console.log(k);
+    console.log(n);
+    console.log(m);
+    // alert(a);
+    // alert(b);
+    // alert(c);
+    // alert(d);
+    // alert(e);
+    // alert(f);
+    // alert(j);
+    // alert(h);
+    // alert(i);
+    // alert(j);
+    // alert(k);
+    // alert(n);
+    // alert(m);
+    document.write(a);
+    document.write(b);
+    document.write(c);
+    document.write(d);
+    document.write(e);
+    document.write(f);
+    document.write(j);
+    document.write(h);
+    document.write(i);
+    document.write(j);
+    document.write(k);
+    document.write(n);
+    document.write(m);
+
+    // Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+
+let firstName = 'Татьяна';
+let middleName = 'Николаевна';
+let lastName = 'Петруня';
+let person = firstName + ' ' + middleName + ' ' + lastName;
+console.log(person);
+
+    // За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    let age = 30;
+    let p = prompt('Enter firstName');
+    let r = prompt('Enter middleName');
+    let s = prompt('Enter age');
+    console.log(p);
+    console.log(r);
+    console.log(s);
+
+
+    // Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+console.log('Вітаю' + ' ' + p + ' ' + r + '.Тобі' + ' ' + s + ' ' + 'років');
+
+    // За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    //     let a = 100; let b = '100'; let c = true;
+
+let first = 100;
+let second = '100';
+let third = true
+    console.log(typeof first);
+    console.log(typeof second);
+    console.log(typeof third);
+
+    // Визначити відповідний оператор в виразах що б вийшов відповідний результат. В однакових виразах не використовувати однакові оператори!!!
+
+    console.log(5 < 6);
+    console.log(5 > 6);
+    console.log(5 === 6);
+    console.log(5 >= 6);
+    console.log(10 >= 10);
+    console.log(10 === 10);
+    console.log(10 < 10);
+    console.log(10 > 10);
+    console.log(10 != 10);
+    console.log(123 > 123);
+    console.log(123 === 123);
+
+    // Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+
+    // let str = "20"; - виведе стрінгове значення 20, тому що значення в лапках виводиться як рядок (текст)
+    // let a = 5; - виведе числове значення 5, тому що без лапок виводиться числове значення
+
+    // document.write(str + a + "<br/>"); - виведе стрінгове значення 205, тому що стрінгове значення + числове робить число стрінговим значенням,  та зробить абзац після нього
+    // document.write(str - a + "<br/>"); - виведе числове значення 15, віднімає 20-5,тому що це математичний вираз, та робить абзац
+    // document.write(str * "2" + "<br/>"); - виведе числове значення 40, помножує 20*2,тому що це математичний вираз, та робить абзац
+    // document.write(str / 2 + "<br/>"); - - виведе числове значення 40, ділить 20/2,тому що це математичний вираз, та робить абзац
+</script>
+</body>
+</html>
