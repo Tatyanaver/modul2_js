@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    //     1. перебрати його циклом while
+    //     2. перебрати його циклом for
+    //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    // 5. перебрати циклом while та вивести  числа тільки парні  значення
+    // 6. перебрати циклом for та вивести  числа тільки парні  значення
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    // 8. вивести масив в зворотньому порядку.
+    // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+
+// 1
+let array = [2,17,13,6,22,31,45,66,100,-18];
+    let y = 0;
+    while (y < array.length) {
+    console.log(array[y]);
+    y++;
+}
+
+// 2
+let arrayOfElements = [2,17,13,6,22,31,45,66,100,-18];
+    for (let x = 0; x < arrayOfElements.length; x++) {
+        console.log(arrayOfElements[x]);
+    }
+
+// 3
+let objects = [2,17,13,6,22,31,45,66,100,-18];
+    let a = 0;
+    while (a < objects.length) {
+        if (a%2 === 1) {
+            console.log(objects[a]);
+        }
+        a++
+    }
+// 4
+let items = [2,17,13,6,22,31,45,66,100,-18];
+    for (let i=0; i < items.length; i++) {
+        if (i%2 === 1) {
+            console.log(items[i]);
+        }
+    }
+
+// 5
+    let object = [2,17,13,6,22,31,45,66,100,-18];
+    let z = 0;
+    while (z < object.length) {
+        const x = object[z];
+        if (x % 2 === 0) {
+            console.log(x);}
+        z++
+    }
+
+// 6
+    let arr = [2,17,13,6,22,31,45,66,100,-18];
+    for (let y = 0; y < arr.length; y++) {
+        const a = arr[y];
+        if (a %2 === 0) {
+            console.log(a);
+        }
+    }
+// 7
+let numbers = [2,17,13,6,22,31,45,66,100,-18];
+    for (let n = 0; n < numbers.length; n++) {
+        const num = numbers[n];
+        if (num % 3 === 0) {
+            console.log('okten');
+        } else {
+            console.log(num)
+        }
+    }
+
+// 8
+let numbersOfArray = [2,17,13,6,22,31,45,66,100,-18];
+    for (let i = numbersOfArray.length-1; i >= 0; i--) {
+        console.log(numbersOfArray[i]);
+    }
+
+ // 9.1
+    let values = [2,17,13,6,22,31,45,66,100,-18];
+    let x = values.length-1;
+    while (x >= 0) {
+        console.log(values[x]);
+        x--;
+    }
+
+// 9.2
+    let someValues = [2,17,13,6,22,31,45,66,100,-18];
+    for (let x = someValues.length-1; x>=0; x--) {
+        console.log(someValues[x]);
+    }
+
+// 9.3
+    let someObjects = [2,17,13,6,22,31,45,66,100,-18];
+    let i = someObjects.length-1;
+    while (i >= 0) {
+        if (i % 2 === 1) {
+            console.log(someObjects[i]);}
+       i--
+    }
+
+// 9.4
+    let someItems = [2,17,13,6,22,31,45,66,100,-18];
+    for (let i = someItems.length-1; i >= 0; i--) {
+        if (i % 2 === 1) {
+            console.log(someItems[i]);
+        }
+    }
+// 9.5
+    let nums = [2,17,13,6,22,31,45,66,100,-18];
+    let m = nums.length-1;
+    while (m >= 0) {
+        const p = nums[m];
+        if (p % 2 === 0) {
+            console.log(p);}
+        m--
+    }
+// 9.6
+    let someNums = [2,17,13,6,22,31,45,66,100,-18];
+    for (let y = someNums.length-1; y >=0; y--) {
+        const c = someNums[y];
+        if (c % 2 === 0) {
+            console.log(c);}
+    }
+// 9.7
+    let numsOfArr = [2,17,13,6,22,31,45,66,100,-18];
+    for (let n = numsOfArr.length-1; n>=0; n--) {
+        const nums = numsOfArr[n];
+        if (nums % 3 === 0) {
+            console.log('okten');
+        } else {
+            console.log(nums);
+        }
+    }
+
+</script>
+
+</body>
+</html>

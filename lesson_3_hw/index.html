@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+    // --створити масив з:
+    //     - з 5 числових значень
+    // - з 5 стічкових значень
+    // - з 5 значень стрічкового, числового та булевого типу
+    // - та вивести його в консоль
+let numbers = [99,35,48,23,120]
+let clients = ['anna', 'sergiy', 'olga', 'ivan', 'dmitriy']
+let users = [
+    {name:'anna', age: 35, status: true},
+    {name:'sergiy', age: 40, status: false},
+    {name:'olga', age: 23, status: true},
+    {name:'ivan', age: 25, status: false},
+    {name:'dmitriy', age: 31, status: false}
+]
+console.log(numbers);
+console.log(clients);
+console.log(users);
+
+    // Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
+
+    let array = [];
+    array[0] = 88;
+    array[1] = 40;
+    array[2] = 'page1';
+    array[3] = 'page2';
+    array[4] = 'page3';
+    array[5] = 'title';
+    console.log(array[0]);
+    console.log(array[1]);
+    console.log(array[2]);
+    console.log(array[3]);
+    console.log(array[4]);
+    console.log(array[5]);
+
+    // За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+for (let user = 0; user < 10; user++) {
+    document.write(`<div>`);
+    document.write ('name of user');
+    document.write (`</div>`);
+}
+
+    // За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+for (let x=0; x < 10; x++) {
+    document.write(`<div>`);
+    document.write('value' + ' ' + x);
+    document.write(`</div>`);
+}
+
+    // За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+    let y = 0;
+    while ( y < 20) {
+    document.write(`<h1>`);
+    document.write('value of y');
+    document.write(`</h1>`);
+    y++
+}
+
+    // За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+let n = 0;
+    while (n < 20) {
+        document.write(`<h1>`);
+        document.write('value' + n);
+        document.write(`</h1>`);
+        n++
+    }
+    // Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+let nums = [12,15,20,56,88,99,135,4,7,66,10]
+for (let i = 0; i < nums.length; i++) {
+    console.log(nums[i]);
+}
+
+    // Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+let foods = ['bread', 'potato', 'meal', 'cheese', 'salad', 'fish', 'rice', 'apples', 'eggs', 'pie'];
+    for (let i=0; i < foods.length; i++) {
+        console.log(foods[i]);
+    }
+    // Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+let elements = ['milk', 'juice', 'soup', 'yogurt', 100, 200, 300, 'true', 'false', -500];
+    for (let x=0; x < elements.length; x++) {
+        console.log(elements[x]);
+    }
+    // Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+let differentElements = ['pie', 'cookie', 'candy', true, 'yogurt', false, 88, 99, 111, 222];
+    for (let y = 0; y < differentElements.length; y++) {
+        const element = differentElements[y];
+        if (typeof element === 'boolean') {
+            console.log(element);
+        }
+    }
+    // Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+let arr = [60, 50, 88, 99, 33, 'first', 'second', 'third', false, true];
+    for (let i = 0; i < arr.length; i++) {
+        const arr1 = arr[i];
+        if (typeof arr1 === 'number') {
+            console.log(arr1);
+        }
+    }
+
+    // Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+let someValues = [55, 66, true, false, 'apple', 99, 'berry', 'lime', 'lemon', 3];
+    for (let y = 0; y < someValues.length; y++) {
+        const value = someValues[y];
+        if (typeof value === 'string') {
+            console.log(value);
+        }
+    }
+    // Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+let objects = []
+    objects[0] = 50;
+    objects[1] = 60;
+    objects[2] = 70;
+    objects[3] = 10;
+    objects[4] = 'lime';
+    objects[5] = 'lemon';
+    objects[6] = false;
+    objects[7] = 'orange';
+    objects[8] = true;
+    objects[9] = 'x';
+    for (let x=0; x < objects.length; x++) {
+        console.log(objects[x]);
+    }
+    // Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+    for (let y = 0; y < 10; y++) {
+        console.log(y);
+        document.write(`<h3>`)
+        document.write (y);
+        document.write(`</h3>`);
+    }
+    // Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+for (let x=0; x < 100; x++) {
+    console.log(x);
+    document.write(`<p>`);
+    document.write(x);
+    document.write(`</p>`);
+}
+    // Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+for (let a = 0; a < 100; a+=2) {
+    console.log(a);
+    document.write(`<p>`);
+    document.write(a);
+    document.write(`</p>`);
+}
+    // Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+for (let index = 2; index < 100; index+=2) {
+    console.log(index);
+    document.write(`<p>`);
+    document.write(index);
+    document.write(`</p>`);
+}
+    // Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+for (let y = 0; y < 100; y++) {
+    if (y%2 === 1) {
+        console.log(y);
+        document.write(`<p>`);
+        document.write(y);
+        document.write(`</p>`);
+    }
+}
+
+
+</script>
+</body>
+</html>
