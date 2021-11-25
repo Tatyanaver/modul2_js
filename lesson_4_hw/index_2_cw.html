@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    // створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+    function numbers (a,b,c) {
+    if (a>b && a>c && b>c) {
+       console.log(c);
+       } else {
+       if (b>a && b>c && a>c) {
+       console.log(c);
+       } else {
+       if (c>a && c>b && a>b) {
+       console.log(b);
+       } else {
+      if (a>b && a>c && c>b) {
+      console.log(b);}
+       else {
+           if (b>a && b>c && c>a) {
+               console.log(a);}
+       else {
+       console.log(a);}
+      }
+      }
+      }
+      }
+    }
+numbers(95,10,5);
+
+    // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+    function nums (a,b,c) {
+        if (a>b && a>c) {
+            console.log(a);
+        } else {
+            if (b>a && b>c) {
+                console.log(b);
+            } else {
+                if (c>a && c>b) {
+                    console.log(c);
+                } else {
+                    if (a>b && a<c) {
+                        console.log(c);}
+                    else {
+                        if (b>a && b<c) {
+                            console.log(c);}
+                        else {
+                            console.log(b);}
+                    }
+                }
+            }
+        }
+    }
+    nums (95,115,120);
+
+    // - створити функцію яка повертає найбільше число з масиву
+
+    function maxValue (arg) {
+        let max = arg[0];
+        for (const a of arg) {
+            if (a > max) {
+                max = a;
+            }
+        }
+        return max;
+    }
+
+    console.log(maxValue([25,50,33,-20,0,48]));
+
+    // - створити функцію яка повертає найменьше число з масиву
+
+    function minValue (arg) {
+        let min = arg[0];
+        for (const y of arg) {
+            if (y < min) {
+                min = y;
+            }
+        }
+        return min;
+    }
+    console.log(minValue([3,8,99,-60,-15]));
+
+    // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+    function sum (nums) {
+        let i=0;
+        for (const number of nums) {
+            i +=number;
+        }
+        return i;
+    }
+console.log(sum([5,25,100,350]));
+
+    // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+    function serOfNums (nums) {
+        let x = 0;
+        for (const num of nums) {
+            x +=num;
+        }
+        return x/nums.length;
+    }
+console.log(serOfNums([20,10,40,70,30]));
+
+
+    // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+    function array (numbers) {
+        let minimum = numbers[0];
+        let max = numbers[0];
+        for (const x of numbers) {
+            if (x < minimum) {
+                minimum = x;
+            }
+            if (x > max) {
+                max = x;
+            }
+        }
+        console.log(max);
+        return minimum;
+    }
+array([99,88,77,22])
+
+    // - створити функцію яка заповнює масив рандомними числами
+    // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+function randomOfNumbers(arg) {
+        for (let i=0; i<100; i++) {
+            arg[i] = Math.round(Math.random()*100);
+        }
+        return arg;
+}
+
+
+    // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+ function randomLimit(arg,limit) {
+        for (let i=0; i<100; i++) {
+            arg[i] = Math.round(Math.random()*limit);
+        }
+        return arg;
+ }
+
+    // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+function arrayReverse (arg) {
+        let y = [];
+        for (let i = arg.length-1, ri = 0; i >= 0; i--, ri++) {
+            y[ri] = y [i];
+        }
+}
+
+
+</script>
+</body>
+</html>
