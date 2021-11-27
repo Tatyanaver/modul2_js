@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Всі функції повинні бути описані стрілочним типом!!!!
+    // створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+    let fn = (a,b) => a*b;
+    console.log(fn(20,30));
+
+
+    // - створити функцію яка обчислює та повертає площу кола з радіусом r
+    let area = r => Math.PI*r*r;
+    console.log(area(5));
+
+    // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+
+    let s = (h,r) => 2 * Math.PI * h * r;
+    console.log (s(5,7));
+
+    // - створити функцію яка приймає масив та виводить кожен його елемент
+let array = arg => {
+        for (const argument of arg) {
+            console.log(argument);
+        }
+    }
+
+    // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+let paragraph = text => document.write(`<p>&{text}</p>`);
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+let list = a => {
+        document.write(`<ul>`);
+        document.write(`<li>${a}</li>`);
+        document.write(`<li>${a}</li>`);
+        document.write(`<li>${a}</li>`);
+        document.write(`</ul>`);
+    }
+    list('words');
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+let create = (text, size) => {
+        document.write(`<ul>`);
+        for (let index=0; index<size; index++) {
+            document.write(`<li>${text}</li>`);
+        }
+        document.write(`</ul>`);
+    }
+    create('word', 3);
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+let arrayOfElements = arg => {
+        document.write(`<ul>`);
+        for (const value of arg){
+            document.write(`<li>${value}</li>`);
+        }
+        document.write(`</ul>`);
+    }
+    arrayOfElements([100,true,'apple']);
+
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age, та виводить їх в документ. Для кожного об'єкту окремий блок.
+let object = arg => {
+        for (const x of arg) {
+            document.write(`<div>${x.id} - ${x.name} - ${x.age}</div>`);
+        }
+    }
+
+</script>
+</body>
+</html>
